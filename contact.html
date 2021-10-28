@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+
+    <script src="./js/formu.js" defer></script>
+</head>
+
+<body>
+    <div class="grid-container" id="home">
+        <!------ Header ---------------------------------------------->
+        <div class="grid-item header">
+
+            <div class="topnav" id="myTopnav">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="./articles.html" class="nav-link">Noticias</a>
+                <a href="#tools" class="nav-link">Herramientas</a>
+                <a href="#links" class="nav-link">Links</a>
+                <a href="./contact.html" class="nav-link">Contacto</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Fin Header ---------------------------------------------->
+
+        <!------ Hero ---------------------------------------------->
+        <div class="grid-item hero">
+            <h1 class="titulo">Payrollero</h1>
+            <h2>Sitio para liquidadores de sueldos!</h2>
+            <div class="explica">
+                <p>Espacio para compartir novedades, herramientas de todo tipo y abierto para el debate de criterios.</p>
+                <p>Se busca enfrentar el desafío de estar actualizado con las últimas novedades de los principales convenios colectivos, legislación laboral y del Impuesto a las Ganancias.</p>
+            </div>
+        </div>
+        <!-- Fin Hero ---------------------------------------------->
+        <div class="form-box">
+            <h1>Formulario de Contacto</h1>
+            <p>Esperamos tu consulta, a la brevedad estarás recibiendo respuesta</p>
+            <form method="POST" class="contacto" name="contacto" data-netlify="true">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input class="form-control" id="name" type="text" name="Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input class="form-control" id="email" type="email" name="Email">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Asunto</label>
+                    <input class="form-control" id="subject" type="text" name="Subject">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="Message"></textarea>
+                </div>
+                <input class="btn btn-primary" type="submit" value="Submit" />
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
